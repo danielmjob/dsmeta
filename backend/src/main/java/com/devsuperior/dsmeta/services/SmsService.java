@@ -1,6 +1,5 @@
 package com.devsuperior.dsmeta.services;
 
-import java.text.DecimalFormat;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -45,7 +44,7 @@ public class SmsService {
 
 		Message message = Message.creator(to, from, msg).create();
 
-		//System.out.println(message.getSid());
-		System.out.println("teste");
+		System.out.println(message.getSid());
+		
 	}
 }
